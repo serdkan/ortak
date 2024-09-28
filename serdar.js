@@ -1,4 +1,4 @@
 function gonder() {
-  document.getElementById("serdar").innerHTML = "ben serdar";
+  document.getElementById("mazhaREmr").innerHTML = "I'm mazhaREmr";
 }
 export default gonder;
