@@ -1,1 +1,1 @@
-import serdar from './serdar'
+import mazhar from './mazhar'
