@@ -1,1 +1,1 @@
-console.log("object");
+import serdar from './serdar'
