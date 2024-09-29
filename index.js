@@ -1,1 +1,0 @@
-import mazhar from './mazhar'
