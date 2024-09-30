@@ -1,5 +1,5 @@
 function gonder()
 {
-    document.getElementById("efe").innerHTML="ben efe"
+    document.getElementById("efe").innerHTML=`<button class="${className}">${"tıkla"}</button>`;
 }
 export default gonder;
