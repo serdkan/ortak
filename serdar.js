@@ -1,4 +1,4 @@
-let ogrenci = [
+let ogrenciler = [
   {
     cinsiyet: "E",
     yas: 15,
@@ -47,4 +47,4 @@ let ogrenci = [
 //2 ayakkabı no 38 den küçük olan öğrnciler
 //3 erkek öğrenciler
 //4 kız öğrenciler
-export default ogrenci; 
+export default ogrenciler; 
