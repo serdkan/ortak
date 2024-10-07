@@ -4,6 +4,8 @@ function sayilar () {
     }
 }
 
+
+
 function tekSayi() {
  
       for ( let i=0; i<100; i++ ){
@@ -12,8 +14,8 @@ function tekSayi() {
                 console.log(i);
             }
 
-
       }
+      
 
 }
 export default tekSayi;
