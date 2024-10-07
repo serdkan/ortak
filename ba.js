@@ -1,20 +1,19 @@
-/**
- *
- */
-
-function gonder(text,className,turu)
-{
-    document.getElementById("ba").innerHTML=`<button class="btn btn-${className}">${text}</button>`;
-
-    if (turu == "buton") {
-      document.getElementById(
-        "ba"
-      ).innerHTML = `<button class="btn btn-${className}">${text}</button>`;
-    }
-    if (turu == "alert") {
-      document.getElementById(
-        "ba"
-      ).innerHTML = `<div class="alert alert-primary" role="alert"> ${text} </div>`;
+function sayilar () {
+    for (let i=100; i>=0; i--) {
+        console.log(i);
     }
 }
-export default gonder;
+
+function tekSayi() {
+ 
+      for ( let i=0; i<100; i++ ){
+
+            if(i%2 > 0){
+                console.log(i);
+            }
+
+
+      }
+
+}
+export default tekSayi;

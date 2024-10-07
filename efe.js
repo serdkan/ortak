@@ -1,20 +1,11 @@
-/**
- *
- * @param {string} text buton içine gelecek yazı
- * @param {string} className component için class belirleyici
- */
-function gonder(text, className, turu) {
-  if (turu == "buton") {
-    document.getElementById(
-      "efe"
-    ).innerHTML = `<button class="btn btn-${className}">${text}</button>`;
-  }
-  if (turu == "alert") {
-    document.getElementById(
-      "efe"
-    ).innerHTML = `<div class="${className}" role="alert">
-    ${text}
-      </div>`;
-  }
+function dongu()
+{
+  for (let i = 100; i <=100; i++)
+{
+    console.log(i % 2 == 0)
+    {
+console.log(i);
+    }
 }
-export default gonder;
+}
+export default dongu;

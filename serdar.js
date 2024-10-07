@@ -1,31 +1,44 @@
-/**
- *
- * @param {string} text buton içine gelecek yazı
- * @param {string} className component için class belirleyici
- */
-function gonder(text, className, turu) {
-  if (turu == "buton") {
-    document.getElementById(
-      "serdar"
-    ).innerHTML = `<button class="btn btn-${className}">${text}</button>`;
-  }
-  if (turu == "alert") {
-    document.getElementById(
-      "serdar"
-    ).innerHTML = `<div class="${className}" role="alert">
-        ${text}
-    </div>`;
-  }
+  let ogrenci = [
+    {
+      cinsiyet: "E",
+      yas: 15,
+      ayakkabiNo: 37,
+      okulNo: 1366,
+      donemOdevi: "MATEMATİK",
+    },
+    {
+      cinsiyet: "K",
+      yas: 13,
+      ayakkabiNo: 36,
+      okulNo: 108,
+      donemOdevi: "FEN BILGISI",
+    },
+    {
+      cinsiyet: "E",
+      yas: 14,
+      ayakkabiNo: 35,
+      okulNo: 99,
+      donemOdevi: "BEDEN EĞİTİM",
+    },
+    {
+      cinsiyet: "K",
+      yas: 13,
+      ayakkabiNo: 35,
+      okulNo: 99,
+      donemOdevi: "BEDEN EĞİTİM",
+    },
+    {
+      cinsiyet: "E",
+      yas: 12,
+      ayakkabiNo: 37,
+      okulNo: 47,
+      donemOdevi: "TÜRKÇE",
+    },
+  ];
 
-  if (turu == "card") {
-    document.getElementById(
-      "serdar"
-    ).innerHTML = `<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="${className}" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">${text}</p>
-  </div>
-</div>`;
-  }
-}
-export default gonder;
+
+
+//1 DÖNEM ÖDEVİ MATEMATİK OLAN ÖĞRENCİLER LİSTELE
+//2 ayakkabı no 38 den küçük olan öğrnciler
+//3 erkek öğrenciler
+//4 kız öğrenciler
