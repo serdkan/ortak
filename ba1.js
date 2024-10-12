@@ -48,10 +48,9 @@ let ogrenciler = [
               
 
 
-// for döngüsü
+
 for (let i = 0; i < ogrenciler.length; i++) {
       
-    //    console.log(i +"." + "öğrenci = " + ogrenciler[i].cinsiyet );
 
     if (ogrenciler[i].donemOdevi == "MATEMATİK") {
                 
@@ -63,10 +62,11 @@ for (let i = 0; i < ogrenciler.length; i++) {
 
 }
 
+
 console.log("\n \n \n");
 
-for (let i = 0; i < ogrenciler.length; i++){
 
+for (let i = 0; i < ogrenciler.length; i++){
 
 
     if (ogrenciler[i].ayakkabiNo < 38){
@@ -78,17 +78,18 @@ for (let i = 0; i < ogrenciler.length; i++){
 
 }
 
+
 console.log("\n \n \n");
 
+
 for (let i = 0; i < ogrenciler.length; i++){
-
-
 
 
        if(ogrenciler[i].cinsiyet == "Erkek") {
 
         console.log(i + ". öğrencinin cinsiyeti = " + ogrenciler[i].cinsiyet);
        }
+       
 
        else if (ogrenciler[i].cinsiyet == "Kız"){
         console.log(i + ". öğrencinin cinsiyeti = " + ogrenciler[i].cinsiyet);
