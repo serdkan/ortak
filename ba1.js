@@ -1,3 +1,4 @@
+
 let ogrenciler = [
     {
       cinsiyet: "Erkek",
