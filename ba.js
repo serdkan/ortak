@@ -1,20 +1,7 @@
-/**
- *
- */
+const result = await fetch("https://jsonplaceholder.org/users").then(
+  (response) => response.json()
+);
 
-function gonder(text,className,turu)
-{
-    document.getElementById("ba").innerHTML=`<button class="btn btn-${className}">${text}</button>`;
-
-    if (turu == "buton") {
-      document.getElementById(
-        "ba"
-      ).innerHTML = `<button class="btn btn-${className}">${text}</button>`;
-    }
-    if (turu == "alert") {
-      document.getElementById(
-        "ba"
-      ).innerHTML = `<div class="alert alert-primary" role="alert"> ${text} </div>`;
-    }
+for (let item of result) {
+  console.log(item.address.zipcode);
 }
-export default gonder;
