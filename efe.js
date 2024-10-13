@@ -8,3 +8,4 @@ for (let veri of data) {
     console.log(veri.company.name);
   }
 }
+//ödev
