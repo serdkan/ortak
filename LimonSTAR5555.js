@@ -1,4 +1,4 @@
-async function kontrol() {
+async function limonababadir() {
   const result = await fetch("https://jsonplaceholder.org/users").then(
     (response) => response.json()
   );
@@ -10,12 +10,28 @@ async function kontrol() {
     if (first == "Jane" && last == "Smith") {
       return true;
     }
-
-    else{
-      return false;
-    }
+    
   }
+  return false;
 }
 
-let gelen = kontrol();
+let gelen = limonababadir();
 console.log(gelen);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ("https://www.rekoroyun.com/resim/skibidi-toilet.jpg")
