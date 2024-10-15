@@ -1,11 +1,14 @@
-const data = await fetch("https://jsonplaceholder.org/users").then((response) =>
-  response.json()
-);
+async function Odev(isim, soyisim) {
+  const data = await fetch("https://jsonplaceholder.typicode.com/users").then((response) =>
+    response.json()
+  );
 
-for (let veri of data) {
-  let ilkkarakter = veri.company.name.substring(0, 1);
-  if (ilkkarakter == "G") {
-    console.log(veri.company.name);
+  for (let veri of data) {
+    const [first, last] = veri.name.split(" ");
+    if (first === isim && last === soyisim) {
+      return true;
+    }
   }
+  return false;
 }
-//ödev
+Odev("John", "Doe").then(result => console.log(result));
