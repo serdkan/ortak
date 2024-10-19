@@ -1,21 +1,14 @@
-async function kontrol() {
-  const result = await fetch("https://jsonplaceholder.org/users").then(
-    (response) => response.json()
-  );
+let students = [27, { Number: "1453", Phone: "0555 555 55 55" }];
 
-  for (let item of result) {
-    let first = item.firstname;
-    let last = item.lastname;
+let bilgiler = {
+  class: "1/B",
+  SchoolNumber: "981",
+  TcNo: "55555555555",
+  Phone: "0505 555 55 55",
+  Name: "Ali",
+  Surname: "Güzel",
+  Birthdaye: "2016-10-10",
+};
+let ilkkarakter = bilgiler.SchoolNumber.substring(0, 1);
 
-    if (first == "Jane" && last == "Smith") {
-      return true;
-    }
-
-    else{
-      return false;
-    }
-  }
-}
-
-let gelen = kontrol();
-console.log(gelen);
+console.log(students[1].Number);

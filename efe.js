@@ -1,16 +1,20 @@
-async function control() {
-  const data = await fetch("https://jsonplaceholder.org/users").then(
-    (response) => response.json()
-  );
-  for (let veri of data) {
-    let firstname = veri.firstname;
-    let lastname = veri.lastname;
-    if (firstname == "Jane" && lastname == "Smith") {
-      return true;
-    }
-  }
-  return false;
-}
-
-let dogrumu = await control();
-console.log(dogrumu);
+let student = {
+  schoolName: "Şehit Serhat Sığınak Meslek Lisesi",
+  class: "11/A",
+  schoolNumber: "1828",
+  tcNo: "999999999",
+  phone: "05523741700",
+  name: "Efe",
+  surname: "Gül",
+  birthday: "18.03.2008",
+};
+//console.log(student.name + " " + student.surname);
+let students = [
+  {
+    artist: "ferdi özbeğen",
+    sarkiAdi: "Dönsen bile ",
+    teacherName: "Serdar Kandıran",
+  },
+  { number: "1453", phone: "5545454" },
+];
+console.log(students[0].artist, students[0].sarkiAdi, students[0].teacherName);

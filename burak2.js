@@ -1,15 +1,8 @@
-async function control() {
-  const data = await fetch("https://jsonplaceholder.org/users").then(
-    (response) => response.json()
-  );
+let array = [
+  { Study: "BEDEN", TeacherName: "serdar" },
+  { number: "1453", phone: "5317342683" },
+];
 
-  for (let burak of data) {
-    if (burak.firstname == "Jane" && burak.lastname == "Smith") {
-      return true;
-    }
-  }
-  return false;
-}
-
-let dogruglb = await control();
-console.log(dogruglb);
+console.log(
+  array[0].Study + " " + array[0].TeacherName+ " " + array[1].number + " " + array[1].phone
+);
