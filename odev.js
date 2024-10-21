@@ -1,41 +1,45 @@
 let ogrenciler = [
   {
-    cinsiyet: "E",
+    cinsiyet: "Erkek",
     yas: 15,
     ayakkabiNo: 37,
     okulNo: 1366,
     donemOdevi: "MATEMATİK",
+    sevdigiDersler: {
+      ders1: "Matematik",
+      ders2: "Turkce",
+    },
   },
   {
-    cinsiyet: "K",
+    cinsiyet: "Kız",
     yas: 13,
     ayakkabiNo: 36,
     okulNo: 108,
     donemOdevi: "FEN BILGISI",
   },
   {
-    cinsiyet: "E",
+    cinsiyet: "Erkek",
     yas: 14,
     ayakkabiNo: 35,
     okulNo: 99,
     donemOdevi: "BEDEN EĞİTİM",
   },
   {
-    cinsiyet: "K",
+    cinsiyet: "Kız",
     yas: 13,
     ayakkabiNo: 35,
     okulNo: 99,
     donemOdevi: "BEDEN EĞİTİM",
   },
   {
-    cinsiyet: "E",
+    cinsiyet: "Erkek",
     yas: 12,
     ayakkabiNo: 37,
     okulNo: 47,
     donemOdevi: "TÜRKÇE",
   },
   {
-    cinsiyet: "K",
+    cinsiyet: "Kız",
     yas: 13,
     ayakkabiNo: 39,
     okulNo: 50,
@@ -45,16 +49,24 @@ let ogrenciler = [
 
 for (let i = 0; i < ogrenciler.length; i++) {
   if (ogrenciler[i].donemOdevi == "MATEMATİK") {
-    console.log(
-      `${ogrenciler[i].okulNo} nolu öğrencinin dönem ödevi ${ogrenciler[i].donemOdevi}`
-    );
+    console.log(i + ". öğrencinin dönem ödevi = " + ogrenciler[i].sevdigiDersler.ders1);
   }
 }
 
+console.log("\n \n \n");
+
 for (let i = 0; i < ogrenciler.length; i++) {
   if (ogrenciler[i].ayakkabiNo < 38) {
-    console.log(
-      `${ogrenciler[i].okulNo} nolu öğrencinin ayakkabı no ${ogrenciler[i].ayakkabiNo}`
-    );
+    console.log(i + ". öğrencinin ayakkabı numarası 38den küçüktür");
+  }
+}
+
+console.log("\n \n \n");
+
+for (let i = 0; i < ogrenciler.length; i++) {
+  if (ogrenciler[i].cinsiyet == "Erkek") {
+    console.log(i + ". öğrencinin cinsiyeti = " + ogrenciler[i].cinsiyet);
+  } else if (ogrenciler[i].cinsiyet == "Kız") {
+    console.log(i + ". öğrencinin cinsiyeti = " + ogrenciler[i].cinsiyet);
   }
 }
