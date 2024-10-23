@@ -1,11 +1,9 @@
-const data = await fetch("https://jsonplaceholder.org/users").then((response) =>
+async function kontrol() {
+  const gelenArray = await fetch("https://fakestoreapi.com/products").then((response) =>
     response.json()
   );
-  
-  for (let burak of data) {
-    let ilkkarakter = veri.address.zipcode.substring(0, 1);
-    if (ilkkarakter == 1) {
-      console.log(burak.address.zipcode);
-    }
-  }
-  
+
+  console.log(gelenArray);
+
+}
+kontrol();

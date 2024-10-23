@@ -1,7 +1,24 @@
-const result = await fetch("https://jsonplaceholder.org/users").then(
-  (response) => response.json()
-);
+async function kontrol() {
+  const gelenArray = await fetch("https://fakestoreapi.com/products").then((response) =>
+    response.json()
+  );
+  
 
-for (let item of result) {
-  console.log(item.address.zipcode);
+
+    console.log(gelenArray);
+
 }
+kontrol();
+
+
+
+
+
+// koşul neydi // name ve password
+
+// Id: 5,
+// Name: 'Ömer',
+// Surname: 'Test',
+// School: 'Gültepe Orta okulu',
+// Number: 326,
+// Password: '159'
