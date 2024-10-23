@@ -1,37 +1,14 @@
-async function limonababadir() {
-  const result = await fetch("https://jsonplaceholder.org/users").then(
-    (response) => response.json()
+async function kontrol() {
+  const gelenArray = await fetch("http://45.132.181.68/user").then((response) =>
+    response.json()
   );
-
-  for (let item of result) {
-    let first = item.firstname;
-    let last = item.lastname;
-
-    if (first == "Jane" && last == "Smith") {
-      return true;
+  F;
+  for (let bilgi of gelenArray) {
+    if (bilgi.Name == Fatih && bilgi.Password == 357) {
+      console.log("BABA PUROSUN");
+    } else {
+      console.log("GİRİŞ BAŞARISIz");
     }
-    
   }
-  return false;
 }
-
-let gelen = limonababadir();
-console.log(gelen);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ("https://www.rekoroyun.com/resim/skibidi-toilet.jpg")
+kontrol();
