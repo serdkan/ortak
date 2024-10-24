@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="container" ></div>
+
+
+
+
+    <script>
+        async function kontrol() {
+  const gelenArray = await fetch("https://fakestoreapi.com/products").then(
+    (response) => response.json()
+  );
+  for (let item of gelenArray) {
+    document.getElementById("container").innerHTML += `<img src=${item.image} width='60px'> </img> ${item.title} <br> <h4>  ${item.price} </h4> <br> <br>`;
+
+  }
+}
+
+kontrol();
+
+    </script>
+    
+</body>
+</html>
