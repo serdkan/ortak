@@ -1,8 +1,5 @@
-let menus = ["Anasayfa"," | ","Ürünler"," | ","Hakkımızda"," | ","İletişim"];
+let menus = ["Ana menu" , "Ürünler" , "Hakkımızda" , "İletişim" , "Referanslar" , "Şikayet hattı"];
 
-for(data of menus){
-    document.getElementById("data").innerHTML+=data;
+for(let data of menus){
+    document.getElementById("menu").innerHTML += `<li>${data}</li>`;
 }
-let baslik ="Javascript dersleri";
-
-document.getElementById("data1").innerHTML = "<center><h1>"+baslik+"</h1></center>"

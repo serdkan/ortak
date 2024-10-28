@@ -1,8 +1,10 @@
-let menus = ["anasayfa","ürünler","hakkımızda","iletişim"];
+let menus = ["anasayfa","ürünler","hakkımızda","iletişim","yerimiz"];
 
-let yazi = "DERS";
 
-document.getElementById("yazi").innerHTML=yazi;
+for(let item of menus){
+    document.getElementById("madde").innerHTML+=(`<li> ${item} </li>`);
+}
+
 
 
 

@@ -1,10 +1,5 @@
-let menus = ["anasayfa"," | ","ürünler"," | ","hakkımızda"," | ","iletişim"];
+let menus = ["anasayfa"," | ","ürünler"," | ","hakkımızda"," | ","iletişim"," | " ,"Referanslar"];
 
-for(data of menus){
-    document.getElementById("data").innerHTML+=data;
+for(let data of menus){
+    document.getElementById("data3").innerHTML+=`<li>${data}</li>`;
 }
-let baslik ="Javascript dersleri";
-
-document.getElementById("data1").innerHTML = "<center><h1>"+baslik+"</h1></center>"
-
-//2 dk  AFKYIM
