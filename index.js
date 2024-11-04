@@ -1,11 +1,29 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const sql = require("mssql");
+const { exec } = require("child_process");
 
 app.use(express.static(path.join(__dirname, "/")));
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "serdar", "index.html"));
+});
+
+app.get("/update", function (req, res) {
+  console.log("update");
+  exec("git pull origin serdar", (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Hata: ${error.message}`);
+      return res.status(500).send(`Hata: ${error.message}`);
+    }
+    if (stderr) {
+      console.error(`Stderr: ${stderr}`);
+      return res.status(500).send(`Stderr: ${stderr}`);
+    }
+    console.log(`Stdout: ${stdout}`);
+    res.send(`Git pull işlemi başarılı: ${stdout}`);
+  });
 });
 
 app.get("/burak", function (req, res) {
