@@ -7,6 +7,17 @@
   background-attachment: fixed;
   background-size: cover;
 }
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
         </style>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -15,6 +26,12 @@
             crossorigin="anonymous">
     </head>
     <body>
+
+        <video id="background-video" controls autoplay muted loop
+            poster="../resim/video1.mp4"
+            width="70%" height="70%">
+            <source src="./resim/video1.mp4" type="video/mp4">
+        </video>
         <div class="container">
             <div class="row p-1">
                 <div class="col"><a href="/ahmetaslan"
@@ -45,12 +62,6 @@
             </div>
         </div>
 
-        <div class="container mt-5">
-            <video controls autoplay muted loop poster="../resim/video1.mp4"
-                width="70%" height="70%">
-                <source src="./resim/video1.mp4" type="video/mp4">
-            </video>
-        </div>
     </body>
 
 </html>
