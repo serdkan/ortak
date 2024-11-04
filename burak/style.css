@@ -18,6 +18,7 @@ body{
    line-height: 60px;
    text-align: center;
    transition: 0.6s;   
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .item1{
@@ -50,3 +51,10 @@ body{
 .img2{
    width: 55px;
  }
+
+marquee{
+   font-size: 30px;
+   color: green;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
