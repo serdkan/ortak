@@ -19,7 +19,8 @@ app.get("/update", function (req, res) {
     }
     if (stderr) {
       console.error(`Stderr: ${stderr}`);
-      return res.status(500).send(`Stderr: ${stderr}`);
+      res.redirect('/');
+      
     }
     console.log(`Stdout: ${stdout}`);
     res.send(`Git pull işlemi başarılı: ${stdout}`);
