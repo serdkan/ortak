@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araba Mağazası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .car {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+        .car:hover {
+            transform: translateY(-10px);
+        }
+        .car img {
+            width: 100%;
+            height: auto;
+        }
+        .car-details {
+            padding: 20px;
+        }
+        .car h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .car p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .price {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Araba Mağazası</h1>
+</header>
+<div class="container">
+    <div class="car">
+        <img src="megane.jpg" alt="Renoult Megane">
+        <div class="car-details">
+            <h2>Renoult Megane</h2>
+            <p><b>Model: 2018</b></p>
+            <p class="price">Fiyat: 850,000 TL</p>
+            <p>Şehir içi kullanım için mükemmel, lüks bir sürüş deneyimi sunar.</p>
+        </div>
+    </div>
+    <div class="car">
+        <img src="Nissan_Skyline_-_2F2F.webp" alt="Nissan Skyline R34">
+        <div class="car-details">
+            <h2>Nissan Skyline R34</h2>
+            <p>Model: 1999</p>
+            <p class="price">Fiyat: 900,000 TL</p>
+            <p><b>Brıan O'conner Special</b></p>
+        </div>
+    </div>
+    <div class="car">
+        <img src="hondacıvıc.jpg" alt="Honda Cıvıc">
+        <div class="car-details">
+            <h2>Honda Cıvıc</h2>
+            <p>Model: 2024</p>
+            <p class="price">Fiyat: 1,520,000 TL</p>
+            <p>Yüksek performans ve konforu bir arada sunan prestijli bir sedan.</p>
+        </div>
+    </div>
+</body>
+</html>
