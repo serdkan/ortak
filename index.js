@@ -12,7 +12,7 @@ app.get("/", function (req, res) {
 
 app.get("/update", function (req, res) {
   console.log("update oldu");
-  exec("git pull origin serdar", (error, stdout, stderr) => {
+  exec("git pull origin ortak", (error, stdout, stderr) => {
     if (error) {
       console.error(`Hata: ${error.message}`);
       return res.status(500).send(`Hata: ${error.message}`);
