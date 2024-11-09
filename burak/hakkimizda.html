@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <style>
+
+body{
+        background: linear-gradient(#1925 50% , #1988 50%);
+}
+
+.container
+{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr;
+}
+
+.item{
+   background-color: #1988;
+   height: 60px;
+   line-height: 60px;
+   text-align: center;
+   transition: 0.6s;   
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item1{
+   background-color: #1988;  
+}
+
+.item2{
+   background-color: #1988;  
+}
+
+.item3{
+   background-color: #1988;
+}
+
+.item4{
+   background-color: #1988;
+}
+
+.item:hover{
+   background-color: rgba(18, 226, 202, 0.533);
+   transition: 0.6s;
+}
+
+.img{
+  margin-top: 5px;
+  margin-left: 30px;
+  width: 50px;
+}
+
+.img2{
+   width: 55px;
+ }
+
+h1{
+text-align: center;
+}
+
+p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item1"><img class="img" src="../sidebar-01/assets/logo.svg" alt=""></div>
+        <div class="item2"></div>
+        <div class="item" onclick="gonderAna()">Ana Sayfa</div>
+        <div class="item" onclick="gonder()">Hakkımızda</div>
+        <div class="item" onclick="gonder2()">İletişim</div>
+        <div class="item" onclick="gonder3()">Öğretmenler</div>
+        <div class="item3"></div>
+        <div class="item4"><img class="img2" src="../burak/language_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="img2" src="../burak/shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" >
+        <img class="img2" src="../burak/add_card_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        </div>
+    </div>
+
+    <br> <br>
+
+    <h1>HAKKIMIZDA</h1>
+
+    <p>Merhaba biz yazılımcılarız.</p>
+    <br><br><br>
+    <p>Bu sitede yazılım öğrenebilirsiniz</p>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
