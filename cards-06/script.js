@@ -1,45 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog Preview Card</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="container" id="container">
-        <article class="card">
+async function kontrol() {
+    const gelenArray = await fetch("https://fakestoreapi.com/products").then(
+      (response) => response.json()
+    );
+  
+    for (let item of gelenArray) {
+      document.getElementById("container").innerHTML+=card(item.image,item.category,item.price,item.title,item.description);
+    }
+  
+  }
+  
+  kontrol();
+  
+  function card(foto,category,para,baslik,aciklama) {
+    let html = `<article class="card">
             <div class='background'>
-                <img src="assets/preview.png" alt="Fetch API GraphQL Preview">
+                <img src="${foto}" alt="">
             </div>
             <div class='content'>
                 <div class="card-header">
                     <div class="card-type">
-                        
+                        ${category}
                     </div>
                     <div class="latest-article">
-                      
+                       $${para} 
                     </div>
                 </div>
                 <div class="card-content">
-                    <h2></h2>
+                    <h2>${baslik}</h2>
                     <p>
+                       ${aciklama}
                     </p>
                 </div>
                 <div class="blog-preview__bottom">
                     <div class="blog-author">
-                        <img src="" alt="Avatar">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocJC6hCPul7RMVOAHFAKlutyThY4S_hPQUnsckDmj2Z-iufJ9ASK=s360-c-no" alt="Avatar">
                         <div class="blog-author__name">
                             <div class="blog-author__name">
-                               
+                                bA
                             </div>
                             <a rel="author" href="mailto:david@atheros.ai" class="blog-author__alias">
-                                
+                                @ba555
                             </a>
                         </div>
                     </div>
@@ -55,10 +55,6 @@
                     </a>
                 </div>
             </div>
-        </article>
-    </div>
-
-    <script src="./script.js"></script>
-</body>
-
-</html>
+        </article>  <br> <hr> <br>`;
+    return html;
+  }
