@@ -1,0 +1,64 @@
+.background {
+    background-image: url(beyoglu-district-historic-architecture-galata-tower-medieval-landmark-istanbul-turkey.jpg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+}  
+.divim1{
+border: 5px; background-color: lightgray; border-radius: 25px;
+}
+
+.divim2{
+    background-color: lightgrey;
+    display: inline-block;
+    height: 40%; width: 30%;
+    margin-top: 40px;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+.divim3{
+    background-color: lightgrey;
+    display: inline-block;
+    height: 40%; width: 30%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+div:hover{
+    background-color: gray;
+}
+.img1{
+height: 80%; width: 90%;
+}
+table,th.,td{
+
+}
+#customers tr:hover{
+    background-color: gray;
+}
+ul{
+list-style-type: none;
+background-color: lightgray;
+width: 100%;
+margin-top: -8px;
+margin-left: -5px;
+}
+ul li{
+display: inline-block;
+padding: 4px;
+background-color: lightgray;
+margin-right: 50px;
+height: 30px;
+margin-top: 0px;
+width: 200px;
+}
+ul li:hover{
+background-color: gray;
+height: 30px;
+
+}
+ul li a{
+text-decoration: none;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}

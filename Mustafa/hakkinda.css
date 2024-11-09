@@ -1,0 +1,14 @@
+.background{
+    background-image: url(beyoglu-district-historic-architecture-galata-tower-medieval-landmark-istanbul-turkey.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.table1{
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    background-color: lightgray;
+}
+#customers tr:hover{
+    background-color: gray;
+}
