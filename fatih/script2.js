@@ -1,5 +1,6 @@
-let menus = ["anasayfa"," | ","ürünler"," | ","hakkımızda"," | ","iletişim"," | " ,"Referanslar"];
 
-for(let data of menus){
-    document.getElementById("data3").innerHTML+=`<li>${data}</li>`;
-}
+function baslikDegistir() {
+    const baslik = document.getElementById("baslik");
+  
+    baslik.innerHTML = "Merhaba, JavaScript!";
+  }
