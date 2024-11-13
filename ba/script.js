@@ -1,1 +1,0 @@
-document.getElementById("container").innerHTML="<h1> Başlık </h1>";

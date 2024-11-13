@@ -1,64 +1,32 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş Sayfası</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+        body{
+            background-image: url(../img/iyaacpwpwfr41.webp);
+            background-size: 100%;
         }
-        .login-container {
-            width: 300px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        nav { display: flex; justify-content: center; background-color: #330000; }
+        nav a { color: #fff; padding: 15px 20px; text-decoration: none; }
+        .l{
+            color: #FF3333;
+            font-size: 35px;
+            margin-top: 250px;
+            border-color: black;
         }
-        .login-container h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .login-container button:hover {
-            background-color: #45a049;
-        }
+
     </style>
+    <title>Valoranttaki silahlar</title>
 </head>
 <body>
-
-<div class="login-container">
-    <h2>Giriş Yap</h2>
-    <form action="login_process.php" method="POST">
-        <input type="text" name="username" placeholder="Kullanıcı Adı" required>
-        <input type="password" name="password" placeholder="Şifre" required>
-        <button type="submit">Giriş Yap</button>
-    </form>
-</div>
-
+    <nav>
+        <a href="./tabancalar.html">TABANCALAR</a>
+        <a href="./hafifmakineliler.html">HAFİF MAKİNELİLER</a>
+        <a href="./pompalıtüfekler.html">POMPALI TÜFEKLER</a>
+        <a href="./tüfekler.html">TÜFEKLER</a>
+        <a href="./KeskinNişancıTüfekleri.html">KESKİN NİŞANCI TÜFEKLERİ</a>
+        <a href="./Ağırsilahlar.html">AĞIR SİLAHLAR</a>
+    </nav>
+    <center><div class="l"><strong>LimonSTAR Bir Dünya Markasıdır</strong></div></center>
 </body>
 </html>
