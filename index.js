@@ -10,9 +10,12 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "serdar", "index.html"));
 });
 
-app.get("/update", function (req, res) {
+app.get("/update/:username", function (req, res) {
   console.log("update oldu");
-  exec("git pull origin ortak", (error, stdout, stderr) => {
+  const username = req.params.username;
+  console.log(username);
+  if (!username) return;
+  exec(`git pull origin ${username}`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Hata: ${error.message}`);
       return res.status(500).send(`Hata: ${error.message}`);
