@@ -1,1 +1,0 @@
-document.getElementById("yazi").innerHTML="<h1>Mazhar Emir Kalmaz</h1>"
