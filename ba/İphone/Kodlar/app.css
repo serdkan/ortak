@@ -1,0 +1,64 @@
+body{
+    display: flex;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 85%;
+    
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    width: 87%;
+}
+.container3{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 95%;
+}
+.enaltkutu1{
+        text-align: center;
+        text-align: left;
+        font-size: 48px;
+        line-height: 1.0834933333;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+}
+.enaltkutu2{
+        padding-top: 95px;
+        box-align: center;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.1666666667;
+        font-weight: 600;
+        letter-spacing: .009em;
+}
+.container4{
+    width: 75%;
+    border-radius: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.menu ul{
+    list-style-type: none;
+    background-color: aqua;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.menu a{
+    color: purple;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.menu a:hover{
+    background-color: rgb(82, 82, 95);
+
+}
+.menu li{
+    float: left;
+}
