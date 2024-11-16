@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+       body{
+        background-color: black;
+       }
+
+       .container{
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 85%;
+       }
+       .bilgiler{
+       margin-top: 200px;
+        
+       }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    
+    <center>
+
+        <div class="container">
+            <div class="ustkutu"><img width="25px" src="../Resimler/apple (1).png"></div>
+            <div class="ustkutu">Store</div>
+            <div class="ustkutu">Mac</div>
+            <div class="ustkutu">İPad</div>
+            <div class="ustkutu">İPhone</div>
+            <div class="ustkutu">Watch</div>
+            <div class="ustkutu">AirPods</div>
+            <div class="ustkutu">TV ve EV</div>
+            <div class="ustkutu">Eğlence</div>
+            <div class="ustkutu">Aksesuarlar</div>
+            <div class="ustkutu">Destek</div>
+           
+        </div>
+
+        <div class="bilgiler">
+            <div class="isim"> <input type="text" placeholder="İsiminiz?"> </div> <br>
+            <div class="soyisim"> <input type="text" placeholder="Soyisminiz?"> </div> <br>
+            <div class="iletisim"> <input type="text" placeholder="İletişim No;"> </div> <br>
+            <div class="adres"> <textarea placeholder="Adresiniz"></textarea> </div> <br>
+            <button onclick="myFunction()">Siparişi Onayla</button>
+
+
+
+        </div>
+
+
+
+
+    </center>
+    <script>
+        function myFunction() {
+          alert("Sipariş Alındı!");
+        }
+        </script>
+
+</body>
+
+
+</html>
