@@ -1,125 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
     <style>
         body{
-          background-image: url(19c22e78acd36cbbc78d20d4f055d3ce.jpg);
+            background-image: url(./img/3047001.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
         }
-        div{
-          color: beige;
-       margin-top: 100px;
-       margin-left: 80px;
-      
+        .butonlar{
+            margin-top: 100px;
         }
-        h3{
-          margin-left:70px;
+        .button {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s; 
+            cursor: pointer;
         }
-        .kol{
- 
-        margin-top: 100px;
-        color:beige;
-        }
+
         
- </style>
+        .button:hover {
+            background-size: 100px;
+            background-color: #45a049; 
+            transform: scale(1.05); 
+            border-radius: 10%;
+            border: black;
+        }
+
+        
+        .button:active {
+            transform: scale(0.95);
+        }
+        .btn2{
+            background-color: purple;
+            color: yellow;
+        }
+        .btn2:hover{
+            background-size: 100px;
+            border-style: solid;
+            background-color:  yellow;
+            color: red; 
+            transform: scale(1.05); 
+           border-color: red;
+        }
+        .btn3{
+            background-color: black;
+            color: white;
+        }
+        .btn3:hover{
+            background-size: 100px;
+            border-style: double;
+            border-color: white;
+            border-color: black;
+            color: black;
+            transform: scale(1.05); 
+            border-radius: 10%;
+        }
+
+        .menu{ width:300px;
+       height:48px; 
+       background: rgb(255, 0, 132); 
+       margin:0 auto; 
+       border-radius: 50%;
+          
+       }
+        .menu ul li {
+            float:left;
+            list-style-type:none;
+             position:relative; 
+            }
+        .menu ul li a{
+            color:#fff;
+            font:17px Arial;
+            text-decoration:none;
+            display:block; 
+            padding:14px 15px;
+            }
+        .menu ul li a:hover
+                { 
+                 color:#c4b998; 
+                }
+        .menu ul li ul {
+            display:none; 
+            right:0; 
+            position:absolute; 
+            top:48px; 
+              }
+        .menu ul  li ul a{
+            background: purple; 
+            color:white; 
+            display:block;
+            font:bold 12px Arial, Helvetica, Sans-serif; 
+            margin:0px; 
+            width:50px; 
+            height:18px;    
+            text-decoration:none;
+            line-height:12px;
+            }
+        .menu ul li:hover ul 
+        { 
+            display:block; 
+        }
+        .no1{
+          text-align: center;
+          margin-top: 900px;
+          size: 50px;
+        }
+    </style>
+
+    <title>menü</title>
+    <link rel="icon" type="image/x-icon" href="./img/titleicon.jpg">
 </head>
 <body>
-
-    <table>
-
-     
-        <tr>
- 
-          
-            <td>
-
-                <div class="kapı">
     
-                    <a href="vandal.html"><img width="200px" src="Vandal.webp"></a>
-                    <br><br>
-                      
-                      <h3>vandal</h3>
-                      </td>
-                   
+
+    <div class="menu">
+        <ul>
+            <li><a href="kitap.html">Kitap okuma</a></li>
+            
+                <li><a href="valo.html">Valorant</a></li>
+  
                 
-                </div>
-
-            </td>
-
-            <td>
-
-                
-  <div class="kapı kol">
-    
-
-    <a href="guardın.html"><img width="200px" src="guardian.png"></a>
-    <br><br>
-      
-      <h3>guardın</h3>
-
-    </div>
-
-            </td>
-
-
-
-
-
-
-
-            <td>
-
-              
-              <div class="kapı kol">
-    
-
-                <a href="odin.html"><img width="200px" src="Odin.webp"></a>
-                <br><br>
-                  
-                  <h3>odin</h3>
-            
-                </div>
-
-            </td>
-
-
-
-
-
-            <td>
-
-
-              <div class="kapı kol">
-    
-
-                <a href="phantom.html"><img width="200px" src="./img/Phantom-1.png"></a>
-                <br><br>
-                  
-                  <h3>phantom</h3>
-            
-                </div>
-
-            </td>
-
-
-            </td>
-
-
-           
-
-
-            
-
-
-
-
-        </tr>
-
-
-    </table>
-    
+        </ul>
+</div>
+<div class="no1"><h1>By Limon ve By Ömer</h1></div>
 </body>
 </html>
