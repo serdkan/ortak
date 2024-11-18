@@ -1,0 +1,1 @@
+document.getElementById("yazi").innerHTML="<h1>Site başlığı</h1>"

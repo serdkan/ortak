@@ -1,0 +1,87 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-image: url("pictures/satranç\ tahtası.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin-left: 380px;
+    padding: 60px;
+   }
+   .col{
+    width: 70px;
+    height: 70px;
+    
+ 
+   }
+
+   .alt{
+     margin-top: 285px;
+     height: 160px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+   }
+   .ust{
+     height: 160px;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr;
+   }
+   button{
+     background-color: transparent;
+    
+     
+   }
+   .at1{
+     animation-name: haraket;
+     animation-duration: 3s;
+     position: relative;
+     animation-fill-mode: forwards;
+   }
+
+   .at2{
+     animation-name: haraket2;
+     animation-duration: 3s;
+     position: relative;
+     animation-fill-mode: forwards;
+   }
+
+    @keyframes haraket{
+     from{
+        top: 0px;
+        left: 0px;
+     }
+     25%{
+        top: 140px;
+        left: 0px;
+     }
+     100%{
+        top: 140px;
+        left: 75px;
+     }
+   } 
+
+
+   @keyframes haraket2{
+     from{
+        top: 0px;
+        right: 0px;
+     }
+     25%{
+        top: 140px;
+        right: 0px;
+     }
+     100%{
+        top: 140px;
+        right: 75px;
+     }
+   } 
+
+
+
+
+
+
+   
+
