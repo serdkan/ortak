@@ -1,15 +1,63 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
 }
-.banner{
+
+.banner {
     height: 100vh;
     width: 100%;
-    background-image:   url(neonnnn.jpg  );
+    background-image: url(neonnnn.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1{
+
+.card {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
     color: aqua;
+    font-size: 2rem;
+}
+
+p {
+    color: rgb(0, 255, 140);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #001eff; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px; 
+    cursor: pointer;
+    transition: all 1s ease; 
+}
+
+.btn:hover {
+    background-color: #ee00ff; 
+    transition: 1s;
+}
+
+.btn:active {
+    background-color: #007c91; 
+    transform: scale(1); 
 }
