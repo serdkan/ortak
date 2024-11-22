@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+   
+    <style>
+     body{
+        margin: 0px;
+        padding: 0px;
+     }
+
+     /* video{
+        margin-left: 10px;
+        width: 1450px;
+        
+     } */
+
+     #hero video{
+        height: 100vh;
+        width: 100%;
+        background-position: absolute;
+        z-index: 10;
+        object-fit: cover;
+     }
+
+     #hero{
+        position: relative;
+     }
+
+     #hero .content{
+         height: 100%;
+         width: 100%;
+         z-index: 20;
+         position: absolute;
+         top: 0px;
+         left: 0px;
+     }
+     .container{
+        width: 1340px;
+        margin-left: 70px;
+        display:grid;
+        grid-template-columns:1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr;
+        color: white;
+        font-size: small;
+        text-align: center;
+     }
+
+     .col{
+  list-style-type: none;
+  padding-top: 25px;
+  font-size:larger;
+}
+/* .col-3{
+   text-align: left;
+} */
+
+.col-5{
+   text-align: left;
+}
+
+.col-6{
+  text-align: right;
+}
+
+.hr{
+   width: 1300px;
+   margin-left: 95px;
+}
+.yazi{
+   margin-left: 95px;
+   color: white;
+   font-size: 15px;
+   margin-top: 10px;
+}
+.orta{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   margin-top: 170px;
+   margin-left: 95px;
+}
+.ustyazi{
+   font-size: 50px;
+   color: white;
+}
+.ortayzi{
+   font-size: 25px;
+   color: white;
+}
+button {
+   background-color: #4240b2;/* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+}
+
+.col::before{
+   content: "";
+   position: absolute;
+   width: 0px;
+   height: 3px;
+   background-color: #4240b2;
+}
+.col:hover::before{
+   margin-top: 45px;
+   width: 150px;
+}
+
+.alt{
+   margin-top: 130px;
+   background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+}
+.a_ustyazi{
+   font-size: 50px;
+   text-align: center;
+   padding-top: 50px;
+   display: inline-block;
+   height: min-content;
+   padding-bottom: -50px;
+}
+.a_ustyazi2{
+   margin-top: -50px;
+   margin-bottom: -150px;
+   height: 220px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   font-size: larger;
+   padding: 0px;
+}
+.a_ustyazi2 button {
+   width: 300px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.foto_container{
+   padding: 0px;
+   margin-top: -170px;
+   width: 1480px;
+   height: 500px;
+  background-image: url(img/araba1.png);
+  background-position:right;
+  background-position:65%;
+  padding-bottom: 0px;
+  button{
+   border-style: solid;
+    border-color: white;
+    background-color: transparent;
+  }
+}
+.f_1{
+   color: white;
+   font-size: small;
+   margin-left: 70px;
+   margin-top: 160px;
+}
+b{
+   font-size: xx-large;
+}
+.foto_container2{
+   padding-top: 0px;
+   margin-top: 250px;
+   background-image: url(img/araba2.png);
+   background-position:right;
+   background-position:35%;
+   width: 1480px;
+   height: 500px;
+   button{
+   border-style: solid;
+    border-color: white;
+    background-color: transparent;
+  }
+}
+.f_2{
+   color: white;
+   font-size: small;
+   margin-left: 70px;
+   padding-top: 150px;
+}
+.foto_container3{
+   background-image: url(img/araba3.png);
+   background-position:right;
+   background-position:57%;
+   width: 1480px;
+   height: 500px;
+   margin-top: 33px;
+   button{
+   border-style: solid;
+    border-color: white;
+    background-color: transparent;
+  }
+}
+.f_3{
+   margin-left: 70px;
+   color: white;
+   font-size: small;
+   padding-top: 150px;
+}
+.foother{
+   margin-top: 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   background-color: rgba(218, 218, 218, 0.844);
+}
+.fcol{
+   height: 350px;
+   padding: 40px;
+   padding-top: 50px;
+}
+
+
+    </style>
+
+
+</head>
+
+
+
+<body>
+     <div id="hero">
+        <video autoplay loop muted>
+            <source src="img/The new BMW 4 Series Coupé.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="container">
+                
+                  <div class="col-logo"> <img width="65px" src="img/BMW.svg" alt=""> </div>
+                  <div class="col">Modeller</div>
+                  <div class="col col-3">%100 Elektrikli Modeller</div>
+                  <div class="col">Tasarlayın ve Rezerve Edin</div>
+                  <div class="col col-5">Online Hizmetler &nbsp; </div>
+                  <div class="col col-6">BMW'yi Keşfedin</div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                  <div class="col"> <img width="30px" src="img/location.png" alt=""> &nbsp; &nbsp; <img width="30px" src="img/search.png" alt=""> </div>
+            </div>
+
+            <div class="hr"> <hr> </div>
+
+            <div class="yazi">Eşsiz Sürüş Keyfi</div>
+
+            <div class="orta">
+               <div class="ustyazi">YAZIN KEYFİNİ BMW İLE SÜRÜN. <br></div>
+               <div class="ortayzi">BMW MODELLERİNDE HAZİRAN AYINA ÖZEL<br>FIRSATLAR. <br> <br></div>
+               <div> <button>Keşfedin</button> </div>
+            </div>
+
+            <div class="alt">
+                <div class="a_ustyazi">BMW'NİZİ Rezerve Edin</div>
+
+                <div class="a_ustyazi2">
+
+                   <div> 
+                         <center>
+                           <img width="45px" src="img/car.png" alt=""> <br> 
+                            <br> Tasarlayın ve Rezerve Edin <br>
+                            <br> <button>BMW'ni Bul'a Gidin</button>
+                         </center>
+                   </div>
+
+                   <div> 
+                         <center>
+                           <img width="45px" src="img/message.png" alt=""> <br> 
+                           <br> Fiyat Listesi <br>
+                           <br> <button>İnceleyin</button>
+                         </center> 
+                   </div>
+
+                   <div> 
+                         <center>
+                           <img width="45px" src="img/car+.png" alt=""><br>
+                           <br> Ayın Özel Teklifleri <br> 
+                           <br> <button>Keşfedin</button>
+                         </center> 
+                   </div>
+
+                   <div> 
+                         <center>
+                           <img width="45px" src="img/massage+.png" alt=""><br>
+                           <br> BMW Canlı Destek <br> 
+                           <br> <button>Görüşmeyi Başlatın</button> 
+                         </center> 
+                   </div>
+
+                </div>
+
+
+                  <div class="foto_container">
+                     <div class="f_1"> The 1 <br> 
+                       <b>Yrni BMW 1 Serisi</b> <br><br>
+                      <button>Keşfedin</button>
+                  </div>
+
+
+                     <div class="foto_container2">
+                         <div class="f_2">THE 5 <br> <b>Yeni BMW 5 serisi sedan.</b> <br> <br> 
+                           Şimdi yeni mild-hybrid benzinli motor seçeneği ile. <br> <br>
+                           <button>Keşfedin</button>
+                        </div>
+                     </div>
+
+
+                     <div class="foto_container3">
+                         <div class="f_3">
+                           THE İX2 <br> <b>Tamamen elektrikli <br> yeni BMW iX2.</b> <br> <br>
+                           <button>Keşfedin</button>
+                         </div>
+                     </div>
+
+                     <div class="foother">
+                        <div class="fcol col1">
+
+                           <i>İLETİŞİM & DESTEK</i> <br> <br> <br>
+
+                           BMW Canlı Destek <br> <br>
+                           BMW Acil Yol Yardım Hattı <br> <br>
+                           İletişim <br> <br>
+                           Geri Dönüşüm <br> <br>
+                           Gönüllü Geri Çağırma <br> <br>
+                           BMW E-Bülteni <br> <br>
+
+                        </div>
+                        <div class="fcol col2">
+
+                           <i>HIZLI ERİŞİM</i> <br><br><br>
+
+                           Fiyat Listesi <br><br>
+                           BMW Türkiye Mobil Uygulaması <br><br>
+                           Test Sürüşü <br><br>
+                           Kataloglar <br><br>
+                           Site Haritası <br><br>
+
+                        </div>
+                        <div class="fcol col3">
+
+                           <i> BMW DÜNYASI</i> <br><br><br>
+
+                           BMW Türkiye Mobil Uygulaması <br><br>
+                           BMW’ni Bul’da Tasarlayın ve Rezerve Edin <br><br>
+                           BMW Dilediğiniz Yerde <br><br>
+                           BMW Lifestyle Shop <br><br>
+                           İkinci El BMW modelleri Borusan Next’te <br><br>
+                           BMW Motorrad Türkiye <br><br>
+                           BOM Akademi <br><br>
+                           Borusan Otomotiv <br><br>
+
+                        </div>
+                     </div>
+              
+           </div>
+
+          
+
+                </div>
+            </div>
+         </div>
+
+
+     </div>
+
+     
+</body>
+
+
+</html>
+
+
+
