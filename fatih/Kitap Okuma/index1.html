@@ -6,6 +6,13 @@
 
     </head>
     <style>
+        #viana{
+            width: 50px;
+        }
+        #Aja{
+            font-size: 1000000000px;
+            background-color: black;
+        }
         #yazi{
             color: whitesmoke;
             text-align: center;
@@ -16,11 +23,40 @@
         }
         body{
             background-color: black;
-        }
+                  }
+                  button {
+            cursor: pointer;
+            font-size: 1.4rem;
+            border-radius: 16px;
+            border: none;
+            padding: 2px;
+            background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+            position: relative;
+          }
+                   button::after {
+           content: "";
+           position: absolute;
+           width: 65%;
+           height: 60%;
+           border-radius: 120px;
+           top: 0;
+           right: 0;
+           box-shadow: 0 0 20px #ffffff38;
+           z-index: -1;
+         }
 
     </style>
     <body>
+
         <div id="yazi">
+
+        </div>
+        <div class="kutu">
+
+            <textarea type="text" placeholder="Metni giriniz" id="baba"></textarea>
+            <input type="number" placeholder="Sayı giriniz" value="0" id="viana">
+            <button onclick="basla()">Başlat</button>
+            <button><a href="index1.html">Durdur</a></button>
 
         </div>
         <script src="java.js"></script>
