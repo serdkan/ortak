@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+   <style>
+     body{
+        background-color: black;
+    }
+    #yazi{
+        color: rgb(215, 255, 56);
+        font-size:100px;
+        font-weight: 500;
+        margin-top: 300px;
+        font-family: Fantasy;
+    }
+   </style>
+
+</head>
+<body>
+    
+        <center>
+
+            <div id="yazi">
+                
+                
+                         </div>
+
+        </center>
+
+
+
+
+         <script>
+             
+
+          let input = localStorage.getItem('exampleFormControlTextarea1');
+
+          let metin = String(input); 
+
+
+
+          const yazisi = metin.split(" ");
+
+          for (let i = 0; i < yazisi.length; i++) {
+            setTimeout(() => {
+            document.getElementById("yazi").innerHTML = yazisi[i];
+             }, i * 300);
+            }
+
+         </script>
+
+</body>
+</html>
