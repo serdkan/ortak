@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(computerarka.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 32px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    cursor:pointer;
+    border-radius: 50%;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 25px;/* Genel sayfa düzeni */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Navbar Stili */
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+        padding: 10px 0;
+    }
+    
+    .navbar img {
+        float: left;
+        margin-left: 20px;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: right;
+    }
+    
+    .navbar ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .navbar ul li a:hover {
+        background-color: #575757;
+        border-radius: 5px;
+    }
+    
+    /* Card Stili */
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    
+    .card-1 {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 60%;
+        text-align: center;
+    }
+    
+    .card-1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .card-1 h1 {
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    
+    .card-1 p {
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+    
+    .card-1 button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .card-1 button:hover {
+        background-color: #575757;
+    }
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(174, 255, 0);
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:40%;
+    color: #fff;
+    text-align: center;
+}
+.content h1{
+    font-size: 65px;
+}
+.content p{
+    margin: 20px auto;
+}
+/* button{
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 35px;
+    margin: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #6166B3;
+    font-size: 17px;
+    transition: 1s;
+}
+button:hover{
+    color:black;
+    transition: 1s;
+    background-color: #6166c3;
+} */
