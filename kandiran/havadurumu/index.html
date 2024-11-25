@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body, html {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+            }
+            video {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              z-index: -1; /* İçeriklerin videonun üstünde görünmesini sağlar */
+            }
+            .content {
+              position: relative;
+              z-index: 1; /* Videonun üstünde görünmesi için */
+              color: white;
+              text-align: center;
+              font-family: Arial, sans-serif;
+              margin-top: 20%;
+            }
+            h1,h2,h3,h4{
+                color: white;
+            }
+            input{
+                background-color: transparent;
+            }
+          </style>
+    </head>
+    <body>
+        <div id="video"></div>
+        <div>
+            <input type="text" placeholder="Lütfen şehir giriniz" id="sehir" />
+            <br>
+            <button onclick="havadurumugetir()"> Getir</button>
+        </div>
+        <h1>Günlük hava durumu</h1>
+        <h2 id="city"></h2>
+        <h3>Derece:</h3>
+        <h1 id="derece"></h1>
+        <h2>Rüzgar hızı</h2>
+        <h1 id="ruzgarhizi"></h1>
+        <div id="icon"></div>
+        <script src="havadurumu.js"></script>
+
+    </body>
+</html>
