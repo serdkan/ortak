@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(187, 129, 209);
+        }
+        .data2{
+            background-color: black;
+            height: 200px;
+            width: 1000px;
+            color: white;
+            margin-left: 20px;
+            border-color: gray;
+        }
+        .datam2{
+            margin-left: 20px;
+        }
+        .datamm2{
+            background-color: black;
+            height: 250px;
+            width: 1000px;
+            color: white;
+            margin-left: 20px;
+            border-color: gray;
+        }
+        a{
+            background-color: green;
+            color: blanchedalmond;
+            margin-left: 120px;
+            margin-bottom: 20px;
+            height: 90px;
+            width: 150px;
+        }
+    </style>
+    <title>Değişkenler</title>
+</head>
+<body>
+
+    <div class="data">
+        <div class="datam2">
+            <h5>
+                JavaScript'te değişkenler (variables), programda veri saklamak ve manipüle etmek için kullanılır. Değişkenler, belirli bir değeri veya referansı tutan isimlendirilmiş bellek alanlarıdır. JavaScript’te değişken tanımlamak için birkaç temel yöntem ve kurallar bulunmaktadır. Aşağıda bu konuyu detaylı bir şekilde açıklayacağım. <br>
+                Değişken Tanımlama <br>
+                 <br>
+                JavaScript'te değişken tanımlamak için üç anahtar kelime kullanılır: <br>
+                 <br>
+                var <br>
+                <br>
+                let <br>
+                <br>
+                const <br>
+                <br>
+                <br>
+                1. var <br>
+                <br>
+                <br>
+                var, ES5 ve öncesi sürümlerde değişken tanımlamak için kullanılan klasik bir anahtar kelimedir. <br>
+                 <br>
+                var ile tanımlanan değişkenler, fonksiyon kapsamına (function scope) sahiptir. Yani, bir fonksiyon içinde tanımlandıysa, o fonksiyon dışında erişilemezler. Ayrıca, bir var değişkeni, tanımlandığı yerde yeniden tanımlanabilir. <br>
+                <br>
+                <br>
+       
+               </h5>
+        </div>
+    </div>
+    <div class="data2">
+        <div class="datam2">
+            <span>
+                <h4>
+                    var x = 10; <br>
+                    console.log(x); // 10 <br>
+                    <br>
+                    if (true) { <br>
+                        var x = 20; // aynı değişkeni tekrar tanımladık <br>
+                        console.log(x); // 20 <br>
+                    } <br>
+                    console.log(x); // 20 (fonksiyon kapsamı nedeniyle dışarıda da aynı x'i gösterir) <br>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <div class="data3">
+        <div class="datam2">
+            <span>
+                <h4>
+                    2. let <br>
+                    <br>
+                    <br>
+                    let, ES6 (ECMAScript 2015) ile tanıtılan bir anahtar kelimedir. <br>
+                    <br>
+                    let ile tanımlanan değişkenler blok kapsamına (block scope) sahiptir. Bu, değişkenin yalnızca tanımlandığı blok içinde erişilebilir olduğu anlamına gelir. Ayrıca, let ile tanımlanan değişkenler, birden fazla kez tanımlanamaz. <br>
+                    <br>
+                    <br>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <div class="data2">
+        <div class="datam2">
+            <span>
+                let y = 10; <br>
+                console.log(y); // 10<br>
+                <br>
+                if (true) {<br>
+                    let y = 20; // farklı bir y tanımlandı<br>
+                    console.log(y); // 20<br>
+                }<br>
+                console.log(y); // 10 (dışarıda tanımlanan y etkilenmedi)<br>
+            </span>
+        </div>
+    </div>
+    <div class="data3">
+        <div class="datam2">
+            <span>
+                <h4>
+                    3. const <br>
+                    <br>
+                    <br>
+const, sabit değişkenler için kullanılır ve yine ES6 ile tanıtılmıştır.<br>
+<br>
+const ile tanımlanan değişkenler de blok kapsamına sahiptir. Ancak const ile tanımlanan bir değişkenin değeri bir kez atandıktan sonra değiştirilemez. Bu, sabit bir referans olduğu anlamına gelir.<br>
+<br>
+<br>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <div class="datamm2">
+        <div class="datam2">
+            <span>
+                <h4>
+                    const z = 30; <br>
+console.log(z); // 30<br>
+<br>
+// z = 40; // Bu kod hata verir: "Assignment to constant variable."<br>
+<br>
+if (true) {<br>
+    const z = 40; // farklı bir z tanımlandı<br>
+    console.log(z); // 40<br>
+}<br>
+console.log(z); // 30 (dışarıda tanımlanan z etkilenmedi)<br>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <div class="data4">
+        <div class="datam2">
+            <span>
+                <h4>
+                    Değişken İsimlendirme Kuralları <br>
+                    <br>
+Değişken isimleri aşağıdaki kurallara uymalıdır:<br>
+<br>
+İlk karakter harf, $, veya _ ile başlamalıdır. Sayı ile başlayamaz.<br>
+<br>
+Büyük/küçük harf duyarlılığı vardır: myVariable ve myvariable farklı değişkenlerdir.<br>
+<br>
+Boşluk, özel karakter veya anahtar kelimeler kullanılamaz.<br>
+<br>
+<br>
+Veri Türleri<br>
+<br>
+JavaScript’te değişkenler, farklı veri türlerini tutabilir:<br>
+<br>
+Primitive Veri Türleri: string, number, boolean, null, undefined, symbol (ES6 ile eklenmiştir).<br>
+<br>
+Referans Veri Türleri: object, array, function.<br>
+<br>
+<br>
+Örnek Kullanım<br>
+<br>
+<br>
+                </h4>
+            </span>
+        </div>
+    </div>
+    <div class="datamm2">
+        let name = "Alice"; // string <br>
+        const age = 25; // number<br>
+        var isStudent = true; // boolean<br>
+        <br>
+        const person = {<br>
+            name: "Alice",<br>
+            age: 25,<br>
+        };<br>
+        <br>
+        let scores = [100, 90, 85]; // array<br>
+    </div>
+    <div class="yeto">
+        <div class="datam2">
+            <span>
+                <h4>
+                    Sonuç<br>
+                    <br>
+JavaScript'te değişkenler, kodunuzda veri saklamak ve yönetmek için kritik bir rol oynar. Doğru değişken tanımlama anahtar kelimesi seçimi, kodunuzun kapsamını ve davranışını etkileyebilir. `let` ve `const` kullanımı, `var` kullanımına göre daha modern ve güvenli bir yaklaşımdır. Bu nedenle, güncel JavaScript kodlarında `let` ve `const` tercih edilmesi önerilir. <br>
+<br>
+<br>
+                </h4>
+            </span>
+        </div>
+    </div>
+<a href="index.html">Ana Menü</a>
+</body>
+</html>
