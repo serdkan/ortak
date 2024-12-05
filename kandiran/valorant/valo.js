@@ -1,14 +1,6 @@
 async function getInfo() {
-  const data = await fetch("https://valorant-api.com/v1/weapons");
+  const kelime = "attend"
+  const data = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/"+kelime);
   const ozellik = await data.json();
-  console.log(ozellik.data[0].skins[0].displayIcon);
-  document.getElementById(
-    "resim"
-  ).innerHTML = `<img src="${ozellik.data[0].displayIcon}"/>`;
-
-  document.getElementById("silahadi").innerHTML = ozellik.data[0].displayName;
-for(let item of ozellik.data[0].skins) {
-  
-}
 }
 getInfo();

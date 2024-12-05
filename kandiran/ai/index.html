@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body>
+        <script src="brain.js"></script>
+        <script>
+// Eğitim verisi (kelime türleri)
+const trainingData = [
+    { input: "run", output: "verb" },
+    { input: "book", output: "noun" },
+    { input: "beautiful", output: "adjective" },
+    { input: "quickly", output: "adverb" },
+];
+
+// LSTM modelini oluştur
+const net = new brain.recurrent.LSTM();
+
+// Modeli eğit
+net.train(trainingData, {
+    iterations: 2000,
+    log: true,
+    logPeriod: 100
+});
+
+// Kelime türünü tahmin et
+const output = net.run("study");
+console.log(output);  // "adjective" gibi bir sonuç dönecektir
+
+
+    </script>
+    </body>
+</html>
