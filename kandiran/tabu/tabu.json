@@ -1,0 +1,39 @@
+[
+    {
+        "yasemin": [
+            "çiçek",
+            "koku",
+            "bahce",
+            "güzel",
+            "renk"
+        ]
+    },
+    {
+        "futbol": [
+            "top",
+            "saha",
+            "oyuncu",
+            "kaleci",
+            "futbolcu"
+        ]
+    },
+    {
+        "tatil": [
+            "seyahat",
+            "araba",
+            "gezi",
+            "kamp",
+            "biz"
+        ]
+    },
+    {
+        "türkiye": [
+            "ülke",
+            "bayrak",
+            "hilal",
+            "ay",
+            "yıldız"
+        ]
+    }
+]
+
